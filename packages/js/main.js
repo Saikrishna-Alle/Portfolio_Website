@@ -210,3 +210,31 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+document.querySelector('.contact__form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get form values
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let subject = document.getElementById('subject').value;
+  let message = document.getElementById('message').value;
+
+  // Use SMTP.js to send an email
+  Email.send({
+      Host: "smtp.elasticemail.com", // Replace with your SMTP host
+      Username: "krishnarandom56@gmail.com", // Replace with your email
+      Password: "896BAEADD4B3F49CB31DA8BCF9AEEDCA2452", // Replace with your email password
+      Port: 2525,
+      To: 'krishnarandom56@gmail.com', // Recipient email
+      From: "krishnarandom56@gmail.com", // Sender email (from form)
+      Subject: subject,
+      Body: `Name: ${name}<br>Email: ${email}<br>Message: ${message}`
+  }).then(function(response) {
+      if (response === 'OK') {
+          alert("Your message has been sent successfully!");
+      } else {
+          alert("There was an error sending your message: " + response) ;
+      }
+  });
+});
