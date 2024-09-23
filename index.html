@@ -144,10 +144,10 @@
                             create custom software solutions, 
                             and build user-friendly websites that drive success.
                         </p>
-                        <!--
+                        
                         <div class="about__info">
                             <div>
-                                <span class="about__info-title">03+</span>
+                                <span class="about__info-title">01+</span>
                                 <span class="about__info-name">Years <br> experience</span>
                             </div>
                             <div>
@@ -155,11 +155,11 @@
                                 <span class="about__info-name">Completed <br> certifications</span>
                             </div>
                             <div>
-                                <span class="about__info-title">02+</span>
+                                <span class="about__info-title">01+</span>
                                 <span class="about__info-name">companies<br>worked</span>
                             </div>
                         </div>
-                        -->
+                        
                         <div class="about__buttons">
                             <a download="" href="packages/Resume/data_analyst.pdf" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon"></i>
@@ -345,10 +345,10 @@
                         Education
                     </div>
 
-                    <!--<div class="qualification__button button--flex" data-target="#work">
+                    <div class="qualification__button button--flex" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
                         Work
-                    </div>-->
+                    </div>
                 </div>
 
                 <div class="qualification__sections">
@@ -408,15 +408,15 @@
             </div>
             
             <!--==================== QUALIFICATION CONTENT 2 ====================-->
-            <!--<div class="qualification__content" data-content id="work">-->
+            <div class="qualification__content" data-content id="work">
                 <!--==================== QUALIFICATION 1 ====================--> 
-                <!--<div class="qualification__data">
+                <div class="qualification__data">
                     <div>
-                        <h3 class="qualification__title">Trainee Banking Assistant</h3>
-                        <span class="qualification__subtitle">DFCC Head Office - Colombo</span>
+                        <h3 class="qualification__title">Associate Trainee Consultant</h3>
+                        <span class="qualification__subtitle">BDnT Labs - Adilabad</span>
                         <div class="qualification__calendar">
                            <i class="uil uil-calendar-alt"></i>
-                           2017 - 2019
+                           10/2023 - 04/2024
                         </div>
                     </div>
    
@@ -424,10 +424,10 @@
                         <span class="qualification__rounder"></span>
                         <span class="qualification__line"></span>
                     </div>
-                </div>-->
+                </div>
                 
                 <!--==================== QUALIFICATION 2 ====================--> 
-                <!--<div class="qualification__data">
+                <div class="qualification__data">
                    <div></div>
                    <div>
                       <span class="qualification__rounder"></span>
@@ -435,14 +435,14 @@
                    </div>
    
                    <div>
-                       <h3 class="qualification__title">Banking Assistant</h3>
-                       <span class="qualification__subtitle">DFCC Head Office - Colombo</span>
+                       <h3 class="qualification__title">Associate Developer AI</h3>
+                       <span class="qualification__subtitle">BDnT Labs - Adilabad</span>
                        <div class="qualification__calendar">
                           <i class="uil uil-calendar-alt"></i>
-                          2019 - 2020
+                          04/2023 - Now.
                        </div>
                    </div>
-               </div> -->
+               </div>
    
                <!--==================== QUALIFICATION 3 ====================--> 
                <!--<div class="qualification__data">
@@ -464,8 +464,8 @@
                </div> 
              
                </div>
-            </div>
-        </section>-->
+            </div>-->
+        </section>
       
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
@@ -812,34 +812,33 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="" method="post" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <label for="name" class="contact__label">Name</label> <!-- Added "for" attribute to associate label with input -->
+                            <input type="text" id="name" name="name" class="contact__input" required> <!-- Added "id", "name", and "required" attributes for form handling -->
                         </div>
-
+        
                         <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
+                            <label for="email" class="contact__label">E-mail</label> <!-- Added "for" attribute to associate label with input -->
+                            <input type="email" id="email" name="email" class="contact__input" required> <!-- Added "id", "name", and "required" attributes for form handling -->
                         </div>
                     </div>
-
+        
                     <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
+                        <label for="subject" class="contact__label">Subject</label> <!-- Added "for" attribute to associate label with input -->
+                        <input type="text" id="subject" name="subject" class="contact__input" required> <!-- Added "id", "name", and "required" attributes for form handling -->
                     </div>
-
+        
                     <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label for="message" class="contact__label">Description</label> <!-- Added "for" attribute to associate label with textarea -->
+                        <textarea id="message" name="message" cols="0" rows="7" class="contact__input" required></textarea> <!-- Added "id", "name", and "required" attributes for form handling -->
                     </div>
-
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button type="submit" class="button button--flex"> 
                             Send message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>
